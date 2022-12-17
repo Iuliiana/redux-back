@@ -105,6 +105,6 @@ router.get('/api/news', async (ctx, next) => {
 app.use(router.routes());
 app.use(router.allowedMethods());
 
-const port = process.env.PORT || 7071;
+const port = process.env.PORT || 7070;
 const server = http.createServer(app.callback());
 server.listen(port, () => console.log(`server started http://localhost:${port}`))
